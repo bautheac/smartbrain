@@ -44,16 +44,10 @@ class App extends Component {
     }
   }
 
-  // componentDidMount(){
-  //   fetch('http://localhost:3001/').then(res => res.json()).then(console.log)
-  // }
 
   displayFaceBox = (box) => { console.log(box); this.setState({box: box}) }
 
-  onInputChange = (event) => {
-    // console.log(event.target.value);
-    this.setState({ input: event.target.value })
-  }
+  onInputChange = (event) => { this.setState({ input: event.target.value })}
 
   onButtonSubmit = () => {
     if (this.state.input) {
